@@ -49,3 +49,21 @@ icon.addEventListener("click", () => {
   icon.classList.toggle("fi-rr-menu-burger");
   icon.classList.toggle("fi-rr-cross-small");
 });
+
+let currentSlide = 1;
+const totalSlides = document.querySelectorAll('input[name="radio-btn"]').length;
+
+if (totalSlides > 0) {
+    setInterval(() => {
+        currentSlide += 1;
+
+        if (currentSlide > totalSlides) {
+            currentSlide = 1;
+        }
+
+        const activeRadio = document.getElementById(`radio${currentSlide}`);
+        if (activeRadio) {
+            activeRadio.checked = true;
+        }
+    }, 8000);
+}
