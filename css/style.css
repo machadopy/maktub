@@ -109,6 +109,9 @@ nav{
     z-index: 1;
     pointer-events: none;
 }
+.textmobile{
+    display: none;
+}
 .carousel-text h1{
     position: absolute;
     z-index: 2;
@@ -118,7 +121,7 @@ nav{
     left: 80%;
     transform: translate(-50%, 40%);
     text-align: end;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+
 }
 .carousel-text p{
     position: absolute;
@@ -130,7 +133,7 @@ nav{
     white-space: nowrap;
     transform: translate(-50%, 40%);
     text-align: end;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+
 }
  .text-a a{
     color: var(--maktub-verde);
@@ -148,8 +151,6 @@ nav{
     inset: 0;
     opacity: 0;
     transition: opacity 0.5s ease-in;
-    transform: translateX(50px);
-    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
 }
 .manual-navigation{
     position: absolute;
@@ -215,6 +216,38 @@ nav{
 #radio5:checked ~ .navigation-auto .auto-btn5,
 #radio6:checked ~ .navigation-auto .auto-btn6 {
     background-color: var(--maktub-verde);
+}
+footer{
+    background-color: var(--maktub-cinzaharmonia);
+}
+.footer-container{
+    color:#280e3a62;
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+}
+.footer-logo{
+    width: 50px;
+}
+.copytext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.contato h3,
+.copytext h3{
+    color: #7029c5;
+}
+.contato a,
+.copytext p{
+    color: #280e3a62;;
+}
+.contato{
+    text-align: center;
 }
 
 
@@ -284,23 +317,8 @@ nav{
     .respSHOPE{
         content: url("../img/MOB-SHOPE.png");
     }
-    .carousel-text h1{
-        font-size: 3rem;
-        top: 70%;
-        left: 50%;
-        transform: translate(-50%, 50%);
-        text-align: center;
-        line-height: 0.8;
-    }
-    .carousel-text p{
-        color: white;
-        font-size: 1.5rem;
-        top: 80.5%;
-        left: 50%;
-        white-space: nowrap;
-        transform: translate(-50%, 50%);
-        text-align: center;
-
+    .carousel-text{
+        display: none;
     }
     .text-a a{
         color: var(--maktub-verde);
@@ -320,5 +338,52 @@ nav{
         width: 10px;
         height: 10px;
         }
+    .textmobile{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        z-index: 2;
+        color: white;
+        text-align: center;
+        align-items: center;
+        gap: 8px;
 
+
+    }
+
+    .textmobile h1{
+        font-size: clamp(1.6rem, 7vw, 2.4rem);
+        line-height: 1.15;
+    }
+
+    .textmobile p{
+        font-size: clamp(1rem, 4.5vw, 1.4rem);
+        line-height: 1.3;
+        white-space: normal;
+
+
+    }
+
+    .footer-container{
+        flex-direction: column;
+        white-space: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        gap: 20px;
+    }
+    .container-logo{
+        order: 2;
+    }
+    .copytext{
+        order: 3;
+    }
+    .contato{
+        order: 1;
+    }
 }
