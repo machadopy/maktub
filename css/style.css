@@ -34,7 +34,7 @@ header{
 }
 .logo:active,
 .logo:hover {
-    content: url("/img/logomakros.png");
+    content: url("../img/logomakros.png");
 }
 .menuham.click-effect .imgmenu {
     color: var(--maktub-rosa);
@@ -267,22 +267,22 @@ nav{
     opacity: 0.8;
     }
     .respDOLADO{
-        content: url(/img/MOB-\ DOLADOWIND.png);
+        content: url("../img/MOB- DOLADOWIND.png");
     }
     .resp2WINDR{
-        content: url(/img/MOB-\ 2WINDRUA.png);
+        content: url("../img/MOB- 2WINDRUA.png");
     }
     .respPOST{
-        content: url(/img/MOB-\ POSTO.png);
+        content: url("../img/MOB- POSTO.png");
     }
     .respKCHORO{
-        content: url(/img/MOB-\ KCHORO.png);
+        content: url("../img/MOB- KCHORO.png");
     }
     .respCAR{
-        content: url(/img/MOB-\ CARO.png);
+        content: url("../img/MOB- CARO.png");
     }
     .respSHOPE{
-        content: url(/img/MOB-SHOPE.png);
+        content: url("../img/MOB-SHOPE.png");
     }
     .carousel-text h1{
         font-size: 3rem;
