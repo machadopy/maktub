@@ -370,7 +370,7 @@ footer{
 .mapa-item{
     margin-bottom: 1rem;
 }
-.mapa-item{
+.mapa{
     border-radius: 20px     ;
 }
 
@@ -594,6 +594,26 @@ footer{
     }
     .label{
         padding-left: 1rem;
+    }
+    .mapaex{
+        background-color: var(--maktub-cinzaharmonia);
+        display: flex;
+        justify-content: center;
+        border-radius: 20px;
+
+        text-align: center;
+        margin-left: 0.3rem;
+        margin-right: 0.3rem;
+        margin-bottom:2rem;
+        padding-top:2rem;
+        padding-bottom:0;
+    }
+    .mapa-item{
+        margin-bottom: 1rem;
+    }
+    .mapa{
+        width: 400px;
+        border-radius: 20px     ;
     }
 
 
