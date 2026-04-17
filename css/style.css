@@ -249,8 +249,111 @@ footer{
 .contato{
     text-align: center;
 }
+.fuelr-div,
+.fuelr-tag,
+.fuelr-form,
+.fuelr-title,
+.fuelr-line{
+    border: none;
+    background: none;
+    outline: none;
+    max-width: 84rem;
+    }
+    .fuelr-container{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    
+
+}
+
+.fuelr-div{
+    width: 100%;
+    max-width: 84rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    border-radius: 0.6rem;
+    background-color: var(--maktub-cinzaharmonia);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.fuelr-insidecontainer{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10rem;
+    margin-right: 8rem;
+    background-color: var(--maktub-cinzaharmonia);
+    padding: 50px;
+}
+
+.fuelr-title{
+    text-align: center;
+    margin: 2rem 0;
+    margin-inline: 2rem;
+}
+.fuelr-line{
+    background-color: var(--maktub-verde);
+    height: 3px;
+    margin: 2rem 0;
+}
+.fuelr-sidetext{
+    font-family: var(--font-headings);
+    font-size: 3rem;
+    max-width: 3;
+}
+
+.fuelr-tag{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
 
+.fuelr-form input,
+.fuelr-form labels,
+.fuelr-form textarea,
+.fuelr-form select{
+
+    border: .1rem var(--maktub-cinzaharmonia);
+    border-top-left-radius: 1.5rem;
+
+    border-bottom: .2rem solid var(--maktub-verde);
+
+    transition: all 300ms ease-in-out;
+    width: 100%;
+    height: 4rem;
+    margin-bottom: 2rem;
+
+
+}
+.fuelr-form input{
+    width: 100%;
+}
+
+.fuelr-form label{
+    font-family: var(--font-headings);
+
+}
+
+.fuelr-button{
+    background-color: var(--maktub-verde);
+    color: var(white);
+
+    font-family: var(--maktub-font1);
+    font-size: 20px;
+
+    width: 50%;
+    height: 5rem;
+
+    border: .1rem solid var(--maktub-preto);
+    border-radius: .6rem;
+
+    transition: all 300ms ease-in-out;
+
+}
+.label{
+    padding-left: 1rem;
+}
 
 
 
@@ -259,7 +362,7 @@ footer{
         color: var(--maktub-rosa);
     }
 }
-@media (max-width: 800px){
+@media (max-width: 1025px){
     body{
         overflow-x: hidden;
     }
@@ -386,4 +489,95 @@ footer{
     .contato{
         order: 1;
     }
-}
+
+    .fuelr-div{
+        width: 100%;
+        max-width: 84rem;
+
+        margin: 5rem;
+        margin-left:1rem;
+        margin-right: 1rem;
+        margin-bottom: 5rem;
+        border-radius: 0.6rem;
+        background-color: var(--maktub-cinzaharmonia);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.977);
+    }
+
+    .fuelr-insidecontainer{
+        display: block;
+        justify-content: center;
+        margin-left: 0;
+        margin-right: 0;
+        background-color: var(--maktub-cinzaharmonia);
+        padding: 50px;
+    }
+
+    .fuelr-title{
+        text-align: center;
+        margin: 2rem 0;
+        margin-inline: 2rem;
+    }
+    .fuelr-line{
+        background-color: var(--maktub-verde);
+        height: 3px;
+        margin: 0;
+    }
+    .fuelr-sidetext{
+        display: none;
+    }
+
+    .fuelr-tag{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    .fuelr-form input,
+    .fuelr-form labels,
+    .fuelr-form textarea,
+    .fuelr-form select{
+
+        border: .1rem var(--maktub-cinzaharmonia);
+        border-top-left-radius: 1.5rem;
+
+        border-bottom: .2rem solid var(--maktub-verde);
+
+        transition: all 300ms ease-in-out;
+        width: 100%;
+        height: 4rem;
+        margin-bottom: 2rem;
+
+
+    }
+    .fuelr-form input{
+        width: 100%;
+    }
+
+    .fuelr-form label{
+        font-family: var(--font-headings);
+
+    }
+
+    .fuelr-button{
+        background-color: var(--maktub-verde);
+        color: var(white);
+
+        font-family: var(--maktub-font1);
+        font-size: 20px;
+
+        width: 50%;
+        height: 5rem;
+
+        border: .1rem solid var(--maktub-preto);
+        border-radius: .6rem;
+
+        transition: all 300ms ease-in-out;
+
+    }
+    .label{
+        padding-left: 1rem;
+    }
+
+
+    }
