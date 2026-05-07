@@ -1,0 +1,9 @@
+services:
+  maktub_page:
+    image: nginx:alpine
+    container_name: maktub_container
+    restart: always
+    ports:
+      - "8083:80"
+    volumes:
+      - .:/usr/share/nginx/html
